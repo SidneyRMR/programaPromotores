@@ -31,6 +31,22 @@ export default function RootLayout() {
           }}
         />
         <Drawer.Screen
+          name="leitorEan" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: 'Leitor Codigo de Barras',
+            title: 'Leitor Codigo de Barras',
+            drawerIcon: () => <Ionicons name="camera-outline" size={18} color="3A98FF" />
+          }}
+        />
+        <Drawer.Screen
+          name="formulario" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: 'Formulário',
+            title: 'Formulário',
+            drawerIcon: () => <Ionicons name="checkbox-outline" size={18} color="3A98FF" />
+          }}
+        />
+        <Drawer.Screen
           name="tabs" // This is the name of the page and must match the url from root
           options={{
             drawerLabel: 'Tabs',
